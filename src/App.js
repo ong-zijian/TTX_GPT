@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import Navbar from './components/navBar';
+//import MainFunc from './components/main';
+import TTX from './components/ttx'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="App bg-light p-4">
+      <Navbar/>
+      <header className="App-header p-4">
+        <h1 className='mb-4'> TTX with GPT </h1>
       </header>
+      <div>
+        <TTX/>
+      </div>
     </div>
   );
 }
